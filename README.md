@@ -50,7 +50,7 @@ Built as part of my Specialist Diploma in Data Science (AI) at Singapore Polytec
 
 ## Key Findings
 - **Sex** was the strongest predictor of survival
-- **Passenger class (Pclass)** was the second most important feature
+- **Passenger class (Pclass)** showed an unexpected importance in the Random Forest model, likely acting as a proxy for ticketing sequences or family groupings, highlighting the nuances of administrative metadata in dataset analysis.
 - Fare and PassengerId had minimal predictive value
 
 ---
@@ -58,7 +58,8 @@ Built as part of my Specialist Diploma in Data Science (AI) at Singapore Polytec
 ## Files
 | File | Description |
 |---|---|
-| `CA1_Final_Part_A.ipynb` | Main notebook with full analysis and model pipeline |
+| `Titanic_Dataset_THR_Version 2.ipynb` | Primary Submission: Updated pipeline with Pandas 3.0 compliance and refined feature analysis. |
+|`Titanic_Dataset_THR.ipynb` | Original main notebook for reference. |
 | `rfdraft_titanic_predictions.csv` | Final Kaggle submission file |
 
 ---
@@ -73,3 +74,12 @@ Built as part of my Specialist Diploma in Data Science (AI) at Singapore Polytec
 ## Author
 **Tan Han Rong**
 Specialist Diploma in Data Science (AI), Singapore Polytechnic
+
+---
+
+---
+## Project Updates (March 2026)
+To align with industry standards for the **Research & Engagement Specialist** technical assessment:
+* **Modernized Pipeline:** Refactored data transformation logic to comply with Pandas 3.0 standards (replacing `inplace` operations with explicit assignment) to ensure data integrity.
+* **Refined Feature Selection:** Re-included `PassengerId` after feature importance analysis revealed it as a significant proxy variable.
+* **Report Optimization:** Suppressed library-level deprecation warnings to provide a cleaner, more "stakeholder-ready" notebook presentation.
